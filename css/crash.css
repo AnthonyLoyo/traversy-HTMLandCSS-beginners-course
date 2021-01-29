@@ -25,6 +25,10 @@ body {
     margin: auto;
 }
 
+.clr {
+    clear: both;
+}
+
 .box-1 {
     background-color: #333333;
     color: whitesmoke;
@@ -61,8 +65,29 @@ body {
     border-bottom: dotted 1px #333;
 }
 .block {
+    color: blue;
     float: left;
     width: 33.3%;
-    border: 1px solid #ccc;
+    border: 1px solid purple;
+    padding: 10px;
     box-sizing: border-box;
+    /* 
+        What border box does is take the padding and border add it together and from size it correctly to fit inside the width given of 33.3%. 
+
+        If we dont use box-sizing: border-box; our 3 block elements beging to stack on top of each other because we dont have enough space for the padding and border which causes them to stack. 
+
+        USING BOX-SIZING WILL BE ESENTIAL
+    */
+}
+
+#main-block {
+    color: firebrick;
+    float: left;015
+    width: 70%;
+}
+#sidebar {
+    color: fuchsia;
+    float: right;
+    width: 30%;
+    background-color: forestgreen;
 }
