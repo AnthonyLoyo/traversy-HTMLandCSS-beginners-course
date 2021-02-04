@@ -1,7 +1,11 @@
 * {
+/* 
+    The '*' asteric is used as a global selector, this means that whatever rules are set inside its curly braces, they msut be followed.
+ */
     margin: 0;
     padding: 0;
 }
+
 a {
     text-decoration: none;
     color: black;
@@ -21,10 +25,19 @@ body {
 }
 
 .container {
-    width: 80%;
+/* 
+    Here we select the div that wrapped around all the elements with the class tag of ' class="container" ' and give it rules to abide by
+*/
+    width: 90%;
+    /*
+        by placing this rule on our container div we are essentially telling it to give every element inside the container div a max width of 90% of the available 100% in the body element
+    */
     margin: auto;
+    /*
+        margin auto can be used to horizontally center the element whithin its container. The element will take up its specific width and the remaining space will be split equally. 
+    */
 }
-
+ 
 .clr {
     clear: both;
 }
@@ -32,8 +45,14 @@ body {
 .box-1 {
     background-color: #333333;
     color: whitesmoke;
-    border: 5px red solid;
-    padding: 3%;
+    border: 1px red solid;
+    /*
+        Every element comes with a little bit of border. we use the rule border to be ble to see it.
+    */
+    padding: 5%;
+    /*
+        In this example we use padding 5% to give the element a 5% padding on all 4 sides.
+    */
 }
 
 .box-1 h1 {
@@ -45,11 +64,17 @@ body {
     border: 3px dotted #ccc;
     padding: 20px;
     margin: 20px 0;
+    /*
+        we gave box 2 a margin of 20px. the margin creates space between the element on top and on the bottom of it.
+    */
 }
 .categories {
-    border: 1px #ccc solid;
+    border: 1px green solid;
     padding: 10px;
-    border-radius: 15px;
+    border-radius: 25px;
+    /*
+        The 'border-radius' rule creates a rounded corner for our div element.
+    */
 }
 .categories h2{
     text-align: center;
@@ -82,7 +107,7 @@ body {
 
 #main-block {
     color: firebrick;
-    float: left;015
+    float: left;
     width: 70%;
 }
 #sidebar {

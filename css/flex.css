@@ -1,4 +1,17 @@
-.container-1 div {
+.container-1 {
+    display: flex;
+}
+
+.container-1 div, .container-2 div {
     border: 1px blueviolet solid;
     padding: 10px;
+}
+
+.container-2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-2-box {
+    width: 27%;
 }
