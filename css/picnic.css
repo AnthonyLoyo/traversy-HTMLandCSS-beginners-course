@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    color:plum;
+    line-height: 1.6;
+}
+
+#showcase {
+    background-image: url(../img/picnic.jpg);
+    /*
+        We use the rule 'background-image: url(../img/picnic.jpg);' in order to have the image as our background in the header tag.
+    */
+
+    height: 100vh;
+    /*
+        the rule 'height: 100vh;' sets the rule that our back ground image should have a HEIGHT set of 100% of our viewport height.
+
+        Essentially no matter what size of the browser the back ground image should take a 100% of the HEIGHT space available to it. 
+    */
+
+    background-size: cover;
+    /* 
+        the rule 'background-size: cover;' sets the rule that the size of our image background should cover the entire container. 
+    */
+
+    background-position: center;
+    /*
+        the rule 'background-position: center;' sets the riule that our back ground image should always remain centered no matter what size of the brwoser. Hense the image remains centered no matter what the size of the viewport.
+    */
+
+    display: flex;
+    /*
+        the rule 'display: flex;' sets that our container is now a flex container.
+    */
+
+    flex-direction: column;
+    /*
+        the rule 'flex-direction: column;' changes the direction of our flex items. naturally thye are positioned as a flex row, delcaring this rule changes that and stacks them on top of eachother like a column.
+    */
+
+    justify-content: center;
+    /*
+        the rule 'justify-content: center;' aligns our content to the center of the page but only vertically leaving space on one side of the browser.
+    */
+
+    align-items: center;
+    /*
+        the rule 'align-items: center;' aligns our content to the center of the page horizontally which in turn now gives our content equall space all around
+    */
+
+    text-align: center;
+
+    padding: 0 20px;
+}
+
+#showcase h1 {
+    font-size: 50px;
+    line-height: 1.2;
+}
+
+#showcase p {
+    font-size: 20px;
+}
+
+#showcase a {
+    font-size: 18px;
+    text-decoration: none;
+    color: plum;
+    border: plum 3px solid;
+    padding: 10px;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+#showcase .button:hover {
+    background-color: plum;
+    color: white;
+}
+
+#section-a {
+    padding: 20px;
+    background-color: whitesmoke;
+    text-align: center;
+}
+
+#section-b {
+    padding: 20px;
+    background-color: whitesmoke;
+    text-align: center;
+}
+
+#section-c {
+    display: flex;
+    
+}
+#section-c div {
+    padding: 20px;
+}
